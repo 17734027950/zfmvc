@@ -16,4 +16,5 @@ return [
     'Zend\Validator',
     'ZendDeveloperTools',
     'Application',
+    'Home'
 ];
