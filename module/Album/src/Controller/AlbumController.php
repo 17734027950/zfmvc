@@ -7,13 +7,28 @@
 
 namespace Album\Controller;
 
+// Add the following import:
+use Album\Model\AlbumTable;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class IndexController extends AbstractActionController
+class AlbumController extends AbstractActionController
 {
+    // Add this property:
+    private $table;
+
+    // Add this constructor:
+    public function __construct(AlbumTable $table)
+    {
+        $this->table = $table;
+    }
+
     public function indexAction()
     {
-        return new ViewModel();
+        return new ViewModel([
+            'albums' => $this->table->fetchAll(),
+        ]);
     }
+
+    /* ... */
 }
