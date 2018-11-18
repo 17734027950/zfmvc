@@ -1,7 +1,5 @@
 下载：
 composer create-project -s dev zendframework/skeleton-application ./
 
-Zend Framework version 3.0.3-dev
-
-
-zf v3.1.1
+# 2018.11.18 Zend Framework version 2.4.13
+Zend Framework version 2.4.13

@@ -11,12 +11,6 @@
  * file.
  */
 
-return [
+return array(
     // ...
-    
-    'db' => [
-        'driver' => 'Pdo',
-        'dsn'    => sprintf('sqlite:%s/data/zftutorial.db', realpath(getcwd())),
-    ],
-    
-];
+);

@@ -4,139 +4,32 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3e7b0d44a6755382f28bca533d99488b
+class ComposerStaticInit5df3a97de2fe96f6983a0f4c3f481208
 {
     public static $prefixLengthsPsr4 = array (
         'Z' => 
         array (
-            'Zend\\View\\' => 10,
-            'Zend\\Validator\\' => 15,
-            'Zend\\Uri\\' => 9,
-            'Zend\\Stdlib\\' => 12,
-            'Zend\\ServiceManager\\' => 20,
-            'Zend\\Router\\' => 12,
-            'Zend\\Mvc\\' => 9,
-            'Zend\\ModuleManager\\' => 19,
-            'Zend\\Loader\\' => 12,
-            'Zend\\Http\\' => 10,
-            'Zend\\EventManager\\' => 18,
-            'Zend\\Escaper\\' => 13,
-            'Zend\\Config\\' => 12,
-            'Zend\\ComponentInstaller\\' => 24,
-            'ZF\\DevelopmentMode\\' => 19,
-        ),
-        'P' => 
-        array (
-            'Psr\\Container\\' => 14,
-        ),
-        'I' => 
-        array (
-            'Interop\\Container\\' => 18,
-        ),
-        'D' => 
-        array (
-            'Demo\\' => 5,
-        ),
-        'A' => 
-        array (
-            'Application\\' => 12,
-            'ApplicationTest\\' => 16,
-            'Album\\' => 6,
+            'Zend\\' => 5,
+            'ZendXml\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Zend\\View\\' => 
+        'Zend\\' => 
         array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-view/src',
+            0 => __DIR__ . '/..' . '/zendframework/zendframework/library/Zend',
         ),
-        'Zend\\Validator\\' => 
+        'ZendXml\\' => 
         array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-validator/src',
-        ),
-        'Zend\\Uri\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-uri/src',
-        ),
-        'Zend\\Stdlib\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-stdlib/src',
-        ),
-        'Zend\\ServiceManager\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-servicemanager/src',
-        ),
-        'Zend\\Router\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-router/src',
-        ),
-        'Zend\\Mvc\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-mvc/src',
-        ),
-        'Zend\\ModuleManager\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-modulemanager/src',
-        ),
-        'Zend\\Loader\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-loader/src',
-        ),
-        'Zend\\Http\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-http/src',
-        ),
-        'Zend\\EventManager\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-eventmanager/src',
-        ),
-        'Zend\\Escaper\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
-        ),
-        'Zend\\Config\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-config/src',
-        ),
-        'Zend\\ComponentInstaller\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-component-installer/src',
-        ),
-        'ZF\\DevelopmentMode\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zfcampus/zf-development-mode/src',
-        ),
-        'Psr\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/container/src',
-        ),
-        'Interop\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
-        ),
-        'Demo\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/module/Demo/src',
-        ),
-        'Application\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/module/Application/src',
-        ),
-        'ApplicationTest\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/module/Application/test',
-        ),
-        'Album\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/module/Album/src',
+            0 => __DIR__ . '/..' . '/zendframework/zendxml/src',
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3e7b0d44a6755382f28bca533d99488b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3e7b0d44a6755382f28bca533d99488b::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5df3a97de2fe96f6983a0f4c3f481208::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5df3a97de2fe96f6983a0f4c3f481208::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

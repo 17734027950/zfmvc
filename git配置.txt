@@ -1,2 +1,2 @@
-git branch 3.0
-git checkout 3.0
+git branch 2.4
+git checkout 2.4
